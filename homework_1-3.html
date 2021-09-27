@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		'use strict';
+		console.log(10 + 10 + "10")	; // после первого действия получаем number 20, после второго получаем string "2010"
+		console.log(10 + "10" + 10); // после первого действия получаем string "1010, после второго получаем string "101010"
+		console.log(10 + 10 + +"10");// после первого действия получаем number 20, после второго получаем number 30 (+"10" == 10)
+		console.log(10 / -"");// деление на ноль, получаем -infinity (-"" == -0) 
+		console.log(10 / +"2,5");// +"2,5" это Nan, если в выражении есть NaN, то результатом вычислений с его участием будет NaN.
+	</script>
+	
+</body>
+</html>

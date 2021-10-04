@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/*5. Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
+			 где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от
+			 переданного значения операции (использовать switch) выполнить одну из арифметических
+			 операций(использовать функции из задания 4) и вернуть полученное значение.
+			 (использовать функции из задания 4) и вернуть полученное значение.
+		*/
+		
+		function add_number (a, b) {
+			return a + b;
+		}
+		function sub_number (a, b) {
+			return a - b;
+		}
+		function mult_number (a, b) {
+			return a * b;
+		}
+		function div_number (a, b) {
+			if (b == 0){
+				return alert('Деление на ноль!');
+			}	
+			else {
+				return a / b;	
+			}	
+		}
+
+		function mathOperation(arg1, arg2, operation){
+			
+			swith (operation){
+				
+				case '+':
+					return add_number (arg1, arg2);
+
+				case '-':
+					return sub_number (arg1, arg2);
+
+				case '*':
+					return mult_number (arg1, arg2);
+
+				case '/':
+					return div_number (arg1, arg2);
+			}
+
+		}
+			
+	</script>
+	
+</body>
+</html>
+
+
+
+
